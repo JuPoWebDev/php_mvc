@@ -2,11 +2,11 @@
 
 function connexion_bdd(){
 
-    $dbName = "mrhv3818_breizh";
-          $port = "";
-          $host = "localhost";
-          $login ="mrhv3818_breizh";
-          $password = "ppskypers";
+    $dbName = "#";
+          $port = "#";
+          $host = "#";
+          $login ="#";
+          $password = "#";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbName;chartset=utf8","$login", "$password");
