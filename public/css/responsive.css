@@ -1,0 +1,256 @@
+
+:root {
+    --marquee-height: 4rem;
+    --color-grey: rgba(144, 145, 150, 255);     /* hsla(230,3,58,1); */
+    --color-brown: rgba(119, 93, 76, 255);      /* hsla(24,22,38,1); */
+    --color-yellow: rgba(255, 162, 69, 255);    /* hsla(30,100,64,1); */
+    --color-orange: rgba(248, 88, 38, 255);     /* hsla(14,94,56,1); */
+    --color-white: rgba(255, 255, 255);
+    --height-section3-cards: 300px;
+  
+   --medium-width: 1200px;
+   --small-width: 900px;
+   --tiny-width: 500px;
+  }
+
+@media screen and (max-width: 1900px) {
+    html{
+        font-size: 0.5em; /* fallback IE8+ */
+        font-size: calc(1em * .5); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    }
+
+    .row>*{
+        font-size: 0.625em; /* fallback IE8+ */
+        font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    html{
+        font-size: 0.4em; /* fallback IE8+ */
+        font-size: calc(1em * .4); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    }
+    
+    .row>div{
+        font-size: 0.625em; /* fallback IE8+ */
+        font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    }
+
+    .card {
+        margin: 7rem;
+      }
+
+    nav div>a {
+        font-size:  1.8rem;
+    }
+
+    #navbarNav > ul > li {
+        margin: 0 3rem !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+    html{
+                font-size: 0.4em; /* fallback IE8+ */
+                font-size: calc(1em * .4); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */    
+    }
+
+    .row>*{
+        font-size: 0.625em; /* fallback IE8+ */
+        font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    }
+
+    nav div>a {
+        font-size:  2rem;
+    }
+
+    #section1-flexbody {
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+    #section1-img {
+        width: 100%;
+      }
+    
+    #section1-bloc {
+
+        width: 100%;
+        margin: auto;
+    }
+
+    .card {
+        margin: auto;
+    }
+    
+    #section3 > .container {
+        flex-direction: column;
+    }
+
+    #section3 > .container .card {
+        margin: auto;
+    }
+
+    #section3 > .container .separateurY {
+        display: none;
+    }
+
+    #section3 > .container .separateurX {
+        display: initial;
+    }
+        
+    h1 {
+        font-size: 3rem;
+      
+    }
+      
+    h2 {
+
+        font-size: 2.5rem;
+
+    }
+
+    /* PAGE PRODUIT */ 
+
+    .evenement-niveau1:first-child {
+        flex-direction: column;
+      }
+    #evenement-affiche {
+        width: 100%;
+        padding: 10%;
+        background-color: var(--color-yellow);
+      }
+    
+      #evenement-form div select {
+        position: absolute;
+        width: 15rem;
+        left: 40%;
+        font-size: 2rem;
+      }
+      #evenement-reservation {
+          flex-direction: column;
+      }    
+
+      #evenement-form { width: 80%;
+    }
+    #evenement-form .evenement-niveau3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #evenement-form div select {
+        position: relative;
+        width: 20rem;
+        left: 0;
+        font-size: 2rem;
+      }
+      
+      #evenement-form div #type {
+        position: relative;
+        width: 10rem;
+      }
+
+      #evenement-total {
+          width: 100%;
+          border-top: 5px solid black;
+          border-bottom: 5px solid black;
+          border-left: none;
+          border-right: none;
+      }
+
+      #evenement-submit {
+          width: 100%;
+          padding: 2rem;
+      }
+
+    /* PAGE FORUM */ 
+
+    #section4-flexbody {
+        flex-direction: column;
+    }
+
+    #section4-flexbody>div {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    #section4-bloc>* {
+        width: 80%;
+    }
+        
+    #section4-bloc>* {
+        width: 80%;
+        padding: 3rem;
+        margin: auto;
+    }
+    #section4-bloc .texte {
+        width: 80%;
+        padding: 3rem;
+        margin: auto;
+    }
+
+      /* PAGE FORUM */ 
+
+  #section4-flexbody>div {
+    width:100%;
+    padding:0;
+}
+}
+
+
+@media screen and (max-width: 500px) {
+    html{
+        font-size: 0.3em; /* fallback IE8+ */
+        font-size: calc(1em * .3); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */    
+    }
+
+    .row>*{
+        font-size: 0.625em; /* fallback IE8+ */
+        font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+      
+    h2 {
+        font-size: 2rem;
+    }
+
+    #section1-flexbody {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+      }
+
+    #section1-img {
+        width: 100%;
+      }
+    
+    #section1-bloc {
+        padding: 5%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .card {
+        margin: 6rem;
+      }
+/* PAGE PRODUIT */ 
+
+.evenement-niveau0 {  
+    width: 85%;
+  }
+
+    .video-yt-container {
+        width: 100%;
+        margin: 0 auto}
+
+body {
+    width: 100%;
+}
+}
