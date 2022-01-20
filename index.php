@@ -5,7 +5,7 @@ namespace App;
 use AccueilController\AccueilController;
 use AltoRouter;
 
-require __DIR__ . "/controllers/AccueilController.php";
+require __DIR__ . "/Controllers/AccueilController.php";
 
 require 'vendor/autoload.php';
 

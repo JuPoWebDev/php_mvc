@@ -16,7 +16,8 @@ try {
     }
 catch (PDOException $e) {
     echo "Erreur de connexion : " . $e->getMessage();
-}}
+}
+}
 
 function is_user($pseudo_post): bool
 {
@@ -182,42 +183,3 @@ function delete_table($table_name) {
     }
 
 }
-
-/*
-function delete_event($id) {
-    try {
-        if(!isset($pdo)){
-            $pdo = connexion_bdd();
-        }
-        $request = $pdo->prepare("SELECT * FROM event WHERE id = ?");
-        $request->execute([$id]);
-        $result = $request->fetch();
-        unlink(("../images/events/" . $result["poster"]) );
-        $request = $pdo->prepare("DELETE FROM price WHERE id_event = ?");
-        $request->execute([$id]);
-        $request = $pdo->prepare("DELETE FROM paiement WHERE id_event = ?");
-        $request->execute([$id]);
-        $request = $pdo->prepare("DELETE FROM event WHERE id = ?");
-        $request->execute([$id]);
-    } catch (PDOException $error) {
-        echo "Erreur : " . $error;
-    }
-}
-*/
-
-/*
-
-function insert_event($name,$description,$city,$location,$poster,$date_event) {
-    $date = date_create($date_event);
-    $new_date = date_format($date,'d/m/Y');
-
-    if(!isset($pdo)){
-        $pdo = connexion_bdd();
-    }
-
-    $request = $pdo->prepare("INSERT INTO event SET name = ?, description = ?, city = ?, location = ?, poster = ?, date_event = ?");
-    $request->execute([$name,$description,$city,$location,$poster,$new_date]);
-
-}
-
-*/
